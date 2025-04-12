@@ -1,4 +1,4 @@
-function exercise() {
+function exerciseI() {
     const arr = [1, 2, 3, 4, 5];
     const n = arr.length;
   
@@ -11,7 +11,7 @@ function exercise() {
     console.log(arr.join(" "));
   }
   
-  function checkPalindrome(s) {
+  function exerciseII(s) {
     let left = 0, right = s.length - 1;
   
     while (left < right) {
@@ -25,7 +25,7 @@ function exercise() {
     return true;
   }
   
-  function findPairs(arr, target) {
+  function exerciseIII(arr, target) {
     const seen = new Set();
     const pairs = new Set();
   
@@ -41,8 +41,4 @@ function exercise() {
     if (pairs.size === 0) console.log("No pairs found");
     else console.log("Pairs:", [...pairs]);
   }
-  
-  reverseArray();
-  console.log("Palindrome:", checkPalindrome("A man, a plan, a canal, Panama!"));
-  findPairs([1, 5, 7, -1, 5], 6);
   
