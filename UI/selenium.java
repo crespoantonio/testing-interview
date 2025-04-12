@@ -10,7 +10,13 @@ public class selenium {
     public static void main(String[] args) {        
         WebDriver driver = new ChromeDriver(); 
         driver.get("www.example.com/login");  
-        
+
+        try {
+            Thread.sleep(4000); //
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         // Finding elements on the page
         WebElement username = driver.findElement(By.id("usename"));
         WebElement password = driver.findElement(By.id("password"));
