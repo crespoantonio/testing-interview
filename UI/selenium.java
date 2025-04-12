@@ -14,10 +14,10 @@ public class selenium {
         // Finding elements on the page
         WebElement username = driver.findElement(By.id("usename"));
         WebElement password = driver.findElement(By.id("password"));
-        WebElement loginBtn = driver.findElement(By.id("loginButton"));
+        WebElement loginBtn = driver.findElements(By.id("loginButton"));
         
-        usernameField.sendKeys("admin");  
-        passwordField.sendKeys("password123");
+        usernameField.fill("admin");  
+        passwordField.fill("password123");
 
         loginButton.click();
 
