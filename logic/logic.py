@@ -5,7 +5,7 @@ def exercise():
         arr[i], arr[n - i - 1] = arr[n - i - 1], arr[i]
     print(" ".join(map(str, arr)))
 
-def check_palindrome(s):
+def exerciseII(s):
     left, right = 0, len(s) - 1
     while left < right:
         while left < right and not s[left].isalnum():
@@ -18,7 +18,7 @@ def check_palindrome(s):
         right -= 1
     return True
 
-def find_pairs(arr, target):
+def exerciseIII(arr, target):
     seen = set()
     pairs = set()
     for num in arr:
@@ -30,7 +30,3 @@ def find_pairs(arr, target):
         print("No pairs found.")
     else:
         print(f"Pairs: {pairs}")
-
-reverse_array()
-print("Palindrome:", check_palindrome("A man, a plan, a canal, Panama!"))
-find_pairs([1, 5, 7, -1, 5], 6)
