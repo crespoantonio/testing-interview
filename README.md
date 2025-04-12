@@ -116,6 +116,3 @@ This is not a speed round. Let the candidate **think aloud**, ask questions, and
 You're not just looking for someone who can code — you're evaluating their ability to think like a tester and communicate like a teammate.
 
 ---
-
-**Maintainers**: Tony
-**Version**: Internal Interview Materials v1.0  
