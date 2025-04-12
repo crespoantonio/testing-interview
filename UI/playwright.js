@@ -4,13 +4,13 @@ const { chromium } = require('playwright');
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  await page.goto('www.example.com/login');
+  await page.goto('https://www.example.com/login');
 
-  await page.fill('usename', 'admin');
-  await page.fill('password', 'password123');
-  await page.click('loginButton');
+  await page.getByRole((textbox), { name: 'Username' }).fill('admin');
+  await page.getByRole((textbox), { name: 'Password' }).fill('password123');
+  await page.getByRole((button), { name: 'Login' }).click();
 
-  await page.waitForSelector('#dashbord');
+  await page.waitForSelector('dashboard');
 
   await browser.close();
 })();
