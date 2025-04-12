@@ -8,6 +8,8 @@ def test_login():
 
     driver.get("www.example.com/login")
 
+    time.sleep(4)
+
     username = driver.find_element(By.ID, "usename")
     password = driver.find_element(By.ID, "password")
     login_btn = driver.find_element(By.ID, "loginButton")
