@@ -2,13 +2,7 @@ import java.util.HashSet;
 
 public class exercises {
 
-    public static void main(String[] args) {
-        reverseArray();
-        checkPalindromeLogic();
-        testPairSum();
-    }
-
-    public static void reverseArray() {
+    public static void exercise() {
         int[] arr = {1, 2, 3, 4, 5};
         int n = arr.length;
 
@@ -24,13 +18,13 @@ public class exercises {
         System.out.println();
     }
 
-    public static void checkPalindromeLogic() {
+    public static void exerciseTwo() {
         String str = "A man, a plan, a canal, Panama!";
         boolean isPalindrome = checkPalindrome(str);
         System.out.println("Is the string a palindrome? " + isPalindrome);
     }
 
-    public static boolean checkPalindrome(String s) {
+    public static boolean exerciseThree(String s) {
         int left = 0, right = s.length() - 1;
         while (left < right) {
             while (left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
@@ -42,13 +36,13 @@ public class exercises {
         return true;
     }
 
-    public static void testPairSum() {
+    public static void exerciseFour() {
         int[] arr = {1, 5, 7, -1, 5};
         int target = 6;
         findPairs(arr, target);
     }
 
-    public static void findPairs(int[] arr, int target) {
+    public static void exerciseFive(int[] arr, int target) {
         HashSet<Integer> seenNumbers = new HashSet<>();
         HashSet<String> foundPairs = new HashSet<>();
 
