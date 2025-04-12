@@ -1,5 +1,5 @@
 describe('POST /createUser', () => {
-  it('should create a user (intentionally uses GET)', () => {
+  it('should create a user', () => {
     cy.request({
       method: 'GET',
       url: 'https://api.example.com/createUser',
