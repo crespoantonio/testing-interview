@@ -7,8 +7,8 @@ def run():
 
         page.goto("https://www.example.com/login")
 
-        page.get_by_role((textbox), name="Username").fill("admin")
-        page.get_by_role((textbox), name="Password").fill("password123")
+        page.get_by_role((textbox), name="Username").write("admin")
+        page.get_by_role((textbox), name="Password").write("password123")
         page.get_by_role((button), name="Login").click()
 
         page.wait_for_selector("dashboard")
