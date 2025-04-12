@@ -22,8 +22,8 @@ public class selenium {
         WebElement password = driver.findElement(By.id("password"));
         WebElement loginBtn = driver.findElements(By.id("loginButton"));
         
-        usernameField.fill("admin");  
-        passwordField.fill("password123");
+        usernameField.write("admin");  
+        passwordField.write("password123");
 
         loginButton.click();
 
