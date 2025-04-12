@@ -18,13 +18,13 @@ public class exercises {
         System.out.println();
     }
 
-    public static void exerciseTwo() {
+    public static void exerciseII() {
         String str = "A man, a plan, a canal, Panama!";
         boolean isPalindrome = checkPalindrome(str);
         System.out.println("Is the string a palindrome? " + isPalindrome);
     }
 
-    public static boolean exerciseThree(String s) {
+    public static boolean exerciseIII(String s) {
         int left = 0, right = s.length() - 1;
         while (left < right) {
             while (left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
@@ -36,7 +36,7 @@ public class exercises {
         return true;
     }
 
-    public static void exerciseFour() {
+    public static void exerciseIV() {
         int[] arr = {1, 5, 7, -1, 5};
         int target = 6;
         findPairs(arr, target);
