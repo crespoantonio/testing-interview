@@ -1,4 +1,5 @@
 from playwright.sync_api import sync_playwright
+import time
 
 def run():
     with sync_playwright() as p:
@@ -10,6 +11,8 @@ def run():
         page.get_by_role((textbox), name="Username").write("admin")
         page.get_by_role((textbox), name="Password").write("password123")
         page.get_by_role((button), name="Login").click()
+
+        time.sleep(5)
 
         page.wait_for_selector("dashboard")
 
