@@ -5,6 +5,8 @@ describe('Login Page Test', () => {
       cy.get('username').write('admin');
       cy.get('password').write('password123');
       cy.get('loginButton').click();
+      
+      cy.wait(5000); 
   
       cy.get('dashbord', { timeout: 10000 }).expect('visible');
     });
