@@ -27,18 +27,22 @@ These exercises are designed to be **framework-agnostic** and **non-runnable**. 
 ## 📁 Folder Structure
 
 ### `API/`
+
 - API test cases in different tools/languages
 - Includes typos, incorrect HTTP methods, missing validations, etc.
 
 ### `logic/`
+
 - General-purpose logic problems (array reversal, palindrome, pair sum)
 - Implemented in Java, JS, and Python with hidden logic flaws
 
 ### `UI/`
+
 - UI automation examples using Selenium, Cypress, and Playwright in different languages
 - Issues include typos in element locators, broken waits, incorrect URL formats, etc.
 
 ### `bdd/`
+
 - Gherkin `.feature` files with intentional BDD anti-patterns
 - Examples include:
   - Multiple actions in one step
@@ -47,11 +51,23 @@ These exercises are designed to be **framework-agnostic** and **non-runnable**. 
   - Mismatched scenario outlines and Examples tables
 
 ### `requirements/`
+
 - Contains vague or ambiguous User Stories
 - Designed to evaluate the candidate’s ability to:
   - Ask clarifying questions
   - Identify missing information
   - Spot potential risks before testing begins
+
+### `DB/`
+
+- SQL exercises with basic table definitions and sample data
+- Designed to evaluate:
+  - Understanding of table relationships (JOINs)
+  - Use of aggregate functions (e.g. `COUNT`, `GROUP BY`)
+  - Ability to write correct and optimized queries
+- Includes:
+  - Query to combine data from `users` and `orders`
+  - Query to find the user who placed the most orders
 
 ---
 
@@ -59,12 +75,12 @@ These exercises are designed to be **framework-agnostic** and **non-runnable**. 
 
 You should focus on the following during evaluation:
 
-| Category | What to Look For |
-|----------|------------------|
-| **Bug Spotting** | Can they find the typos and logical mistakes? |
-| **Tool Fluency** | Do they know how the tool is *supposed* to work? |
-| **Reasoning** | Can they explain why something is incorrect? |
-| **Communication** | Are they clear and confident when walking you through it? |
+| Category           | What to Look For                                                   |
+| ------------------ | ------------------------------------------------------------------ |
+| **Bug Spotting**   | Can they find the typos and logical mistakes?                      |
+| **Tool Fluency**   | Do they know how the tool is _supposed_ to work?                   |
+| **Reasoning**      | Can they explain why something is incorrect?                       |
+| **Communication**  | Are they clear and confident when walking you through it?          |
 | **Best Practices** | Do they mention scalability, readability, or maintenance concerns? |
 
 ---
@@ -95,7 +111,7 @@ Here are some sample questions to guide the conversation:
 
 - These files are **not meant to run**
 - **Do not fix the errors in this repo**
-- Encourage the candidate to explain *why* something is wrong, not just that it is
+- Encourage the candidate to explain _why_ something is wrong, not just that it is
 - Take note of how they think and explain, not just what they say
 
 ---
