@@ -1,8 +1,12 @@
 # 🧪 SQL Exercise for QA Interviews
 
-This exercise is designed to assess the candidate’s ability to understand relationships between tables and write SQL queries that join related data.
+This exercise is designed to assess the candidate's ability to understand relationships between tables and write SQL queries that join related data.
 
 ## 🧩 Tables
+
+<table>
+<tr>
+<td width="50%">
 
 ### Table: `users`
 
@@ -14,7 +18,8 @@ Contains information about the system's users.
 | 2       | Juan Pérez | juan@mail.com |
 | 3       | Luis Soto  | luis@mail.com |
 
----
+</td>
+<td width="50%">
 
 ### Table: `orders`
 
@@ -27,6 +32,10 @@ Contains the orders placed by users.
 | 103      | 2       | Monitor    | 120.00 |
 | 104      | 3       | Webcam     | 45.00  |
 | 105      | 3       | Headphones | 50.00  |
+
+</td>
+</tr>
+</table>
 
 ---
 
