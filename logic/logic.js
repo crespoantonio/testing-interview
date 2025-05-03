@@ -11,19 +11,20 @@ function exerciseI() {
     console.log(arr.join(" "));
   }
   
-  function exerciseII(s) {
-    let left = 0, right = s.length - 1;
-  
-    while (left < right) {
-      while (left < right && !/[a-z0-9]/i.test(s[left])) left++;
-      while (left < right && !/[a-z0-9]/i.test(s[right])) right--;
-      if (s[left].toLowerCase() !== s[right].toLowerCase()) return false;
-      left++;
-      right--;
+function exerciseII() {
+  const arr = [2, 4, 6, 8, 10];
+  let result = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      result += arr[i];
+    } else {
+      result -= arr[i];
     }
-  
-    return true;
   }
+
+  console.log(result);
+}
   
   function exerciseIII(arr, target) {
     const seen = new Set();
