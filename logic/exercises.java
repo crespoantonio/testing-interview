@@ -34,31 +34,3 @@ public class ExerciseII {
         System.out.println(result);
     }
 }
-
-    public static void exerciseIV() {
-        int[] arr = {1, 5, 7, -1, 5};
-        int target = 6;
-        findPairs(arr, target);
-    }
-
-    public static void exerciseFive(int[] arr, int target) {
-        HashSet<Integer> seenNumbers = new HashSet<>();
-        HashSet<String> foundPairs = new HashSet<>();
-
-        for (int num : arr) {
-            int complement = target - num;
-            if (seenNumbers.contains(complement)) {
-                int smaller = Math.min(num, complement);
-                int larger = Math.max(num, complement);
-                foundPairs.add("(" + smaller + ", " + larger + ")");
-            }
-            seenNumbers.add(num);
-        }
-
-        if (foundPairs.isEmpty()) {
-            System.out.println("No pairs found with the given sum.");
-        } else {
-            System.out.println("Pairs with sum " + target + ": " + foundPairs);
-        }
-    }
-}
