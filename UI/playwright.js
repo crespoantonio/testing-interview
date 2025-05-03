@@ -1,11 +1,8 @@
-const { chromium } = require('playwright');
+import { test, expect } from '@playwright/test';
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-
+test('Test', async ({ page }) => {
   await page.goto('https://www.example.com/login');
 
   const username = page.getByRole((textbox), { name: 'Username' }).write('admin');
@@ -15,6 +12,4 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
   await sleep(5000);
 
   await page.waitForSelector('dashboard');
-
-  await browser.close();
-})();
+});
