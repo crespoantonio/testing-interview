@@ -31,7 +31,7 @@ public class ExerciseII {
             }
         }
 
-        System.out.println(result); // Esperado: 6
+        System.out.println(result);
     }
 }
 
