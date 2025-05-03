@@ -5,18 +5,17 @@ def exercise():
         arr[i], arr[n - i - 1] = arr[n - i - 1], arr[i]
     print(" ".join(map(str, arr)))
 
-def exerciseII(s):
-    left, right = 0, len(s) - 1
-    while left < right:
-        while left < right and not s[left].isalnum():
-            left += 1
-        while left < right and not s[right].isalnum():
-            right -= 1
-        if s[left].lower() != s[right].lower():
-            return False
-        left += 1
-        right -= 1
-    return True
+def exerciseII():
+    arr = [2, 4, 6, 8, 10]
+    result = 0
+
+    for i in range(len(arr)):
+        if i % 2 == 0:
+            result += arr[i]
+        else:
+            result -= arr[i]
+
+    print(result)
 
 def exerciseIII(arr, target):
     seen = set()
