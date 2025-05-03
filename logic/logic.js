@@ -25,21 +25,3 @@ function exerciseII() {
 
   console.log(result);
 }
-  
-  function exerciseIII(arr, target) {
-    const seen = new Set();
-    const pairs = new Set();
-  
-    for (let num of arr) {
-      const complement = target - num;
-      if (seen.has(complement)) {
-        const pair = [Math.min(num, complement), Math.max(num, complement)].toString();
-        pairs.add(pair);
-      }
-      seen.add(num);
-    }
-  
-    if (pairs.size === 0) console.log("No pairs found");
-    else console.log("Pairs:", [...pairs]);
-  }
-  
