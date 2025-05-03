@@ -18,23 +18,22 @@ public class exercises {
         System.out.println();
     }
 
-    public static void exerciseII() {
-        String str = "A man, a plan, a canal, Panama!";
-        boolean isPalindrome = checkPalindrome(str);
-        System.out.println("Is the string a palindrome? " + isPalindrome);
-    }
+public class ExerciseII {
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 6, 8, 10};
+        int result = 0;
 
-    public static boolean exerciseIII(String s) {
-        int left = 0, right = s.length() - 1;
-        while (left < right) {
-            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
-            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) right--;
-            if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) return false;
-            left++;
-            right--;
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                result += arr[i];
+            } else {
+                result -= arr[i];
+            }
         }
-        return true;
+
+        System.out.println(result); // Esperado: 6
     }
+}
 
     public static void exerciseIV() {
         int[] arr = {1, 5, 7, -1, 5};
