@@ -16,16 +16,3 @@ def exerciseII():
             result -= arr[i]
 
     print(result)
-
-def exerciseIII(arr, target):
-    seen = set()
-    pairs = set()
-    for num in arr:
-        comp = target - num
-        if comp in seen:
-            pairs.add((min(num, comp), max(num, comp)))
-        seen.add(num)
-    if not pairs:
-        print("No pairs found.")
-    else:
-        print(f"Pairs: {pairs}")
