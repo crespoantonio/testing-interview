@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class selenium {
 
@@ -18,7 +20,7 @@ public class selenium {
         }
 
         // Finding elements on the page
-        WebElement username = driver.findElement(By.id("usename"));
+        WebElement username = driver.findElement(By.id("#usename"));
         WebElement password = driver.findElement(By.id("password"));
         WebElement loginBtn = driver.findElements(By.id("loginButton"));
         
